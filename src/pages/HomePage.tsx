@@ -80,7 +80,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative mt-8 lg:mt-0 hidden lg:block"
+            className="relative mt-8 lg:mt-0"
           >
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-700 aspect-[4/3]">
               {CAROUSEL_IMAGES.map((src, i) => (
