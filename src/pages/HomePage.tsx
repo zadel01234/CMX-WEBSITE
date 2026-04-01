@@ -80,7 +80,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative mt-8 lg:mt-0"
+            className="relative mt-8 lg:mt-0 hidden lg:block"
           >
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-700 aspect-[4/3]">
               {CAROUSEL_IMAGES.map((src, i) => (
@@ -447,7 +447,7 @@ const Sponsorship = () => (
           </ul>
           <button className="bg-white text-cmx-blue px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold hover:shadow-2xl transition-all text-sm sm:text-base w-full sm:w-auto">Become a Sponsor</button>
         </div>
-        <div className="bg-white/10 backdrop-blur-xl p-8 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-white/20">
+        <div className="bg-white/10 backdrop-blur-xl p-8 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-white/20 hidden lg:block">
           <h3 className="text-2xl sm:text-3xl mb-6 sm:mb-8">Sponsorship Tiers</h3>
           <div className="space-y-4 sm:space-y-6">
             {[
