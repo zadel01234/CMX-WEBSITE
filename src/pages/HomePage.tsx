@@ -42,20 +42,20 @@ const Hero = () => {
           {/* Left content */}
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cmx-blue/10 text-cmx-blue rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-5 sm:mb-6">
-              The Premier Community Event in Africa
+              The Premier Community Event in Nigeria
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] mb-5 sm:mb-6">
               BEYOND THE <br /><span className="text-cmx-blue">HORIZON</span>
             </h1>
             <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-lg leading-relaxed">
-              Redefining the strategic importance of community for businesses, entrepreneurs, and tech talent in the African ecosystem.
+              Redefining the strategic importance of community for businesses, entrepreneurs, and tech talent in the <b>Nigerian</b> ecosystem.
             </p>
             <div className="flex flex-wrap gap-3 mb-8 sm:mb-12">
               <div className="flex items-center gap-2 sm:gap-3 bg-cmx-gray px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl">
                 <Calendar className="text-cmx-blue flex-shrink-0" size={18} />
                 <div>
                   <p className="text-[10px] uppercase font-bold text-gray-400 leading-none mb-0.5">Date</p>
-                  <p className="text-xs sm:text-sm font-bold">October 26, 2026</p>
+                  <p className="text-xs sm:text-sm font-bold">Mon July 22nd - Sat 27th 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 bg-cmx-gray px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl">
@@ -117,7 +117,7 @@ const ThemeSection = () => (
         </div>
         <div className="w-full md:w-px md:h-20 h-px bg-white/20" />
         <p className="text-base sm:text-xl md:text-2xl font-light leading-relaxed max-w-2xl">
-          Exploring the <span className="font-bold">Community Landscape</span> and redefining how we build, scale, and sustain ecosystems in Africa.
+          <span className="font-bold">Community</span> as a <span className="font-bold">Growth Engine</span> for Business and Ecosystems.
         </p>
       </div>
     </div>
@@ -133,12 +133,12 @@ const AboutPreview = () => {
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">About the Summit</h2>
           <p className="text-base sm:text-xl text-gray-600 leading-relaxed">
-            The CMX Nigeria Summit is a landmark event designed to redefine the strategic importance of community for businesses, entrepreneurs, and tech talent in the African tech ecosystem.
+            The CMX Nigeria Summit is a landmark event designed to redefine the strategic importance of community for businesses, entrepreneurs, and tech talent in the Nigerian tech ecosystem.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
           {[
-            { icon: <Users className="text-cmx-blue" />, title: 'Connect', desc: 'Network with over 300+ community professionals and industry leaders from across Africa.' },
+            { icon: <Users className="text-cmx-blue" />, title: 'Connect', desc: 'Network with over 300+ community professionals and industry leaders from across Nigeria.' },
             { icon: <Zap className="text-cmx-blue" />, title: 'Learn', desc: 'Gain insights from global experts on building sustainable ecosystems through 5 virtual masterclasses.' },
             { icon: <Rocket className="text-cmx-blue" />, title: 'Grow', desc: 'Elevate your career and business through strategic community integration and cross-sector collaboration.' },
           ].map((item, i) => (
@@ -186,7 +186,7 @@ const EventStructure = () => {
             <div>
               <p className="text-[10px] font-bold uppercase tracking-widest opacity-70 mb-1.5">Days 1–5</p>
               <h3 className="text-xl sm:text-2xl font-black mb-2">Virtual Masterclasses</h3>
-              <p className="text-white/80 leading-relaxed text-sm">Focused, practical, outcome-driven sessions led by Africa's foremost community and tech professionals.</p>
+              <p className="text-white/80 leading-relaxed text-sm">Focused, practical, outcome-driven sessions led by Nigeria's foremost community and tech professionals.</p>
             </div>
           </div>
           <div className="bg-cmx-orange text-white rounded-[2rem] p-7 sm:p-10 flex gap-5 items-start">
@@ -308,10 +308,10 @@ const TargetAudience = () => {
 const SpeakersPreview = () => {
   const navigate = useNavigate();
   const speakers = [
-    { name: 'Samson Goddy',      role: 'Co-Founder, Open Source Africa',       seed: past3 },
-    { name: 'Timothy Oviem',     role: 'Lead, Community Leads in Africa',       seed: past3 },
+    { name: 'Samson Goddy',      role: 'Co-Founder, Open Source Nigeria',       seed: past3 },
+    { name: 'Timothy Oviem',     role: 'Lead, Community Leads in Nigeria',       seed: past3 },
     { name: 'Haneefah A. Lekki', role: 'Programs & Community Manager',          seed: past3 },
-    { name: 'Mfonobong Umondia', role: 'Community Manager, She Code Africa',    seed: past3 },
+    { name: 'Mfonobong Umondia', role: 'Community Manager, She Code Nigeria',    seed: past3 },
   ];
 
   return (
@@ -428,7 +428,7 @@ const Sponsorship = () => (
       <div className="grid md:grid-cols-2 gap-10 sm:gap-12 items-start">
         <div>
           <h2 className="text-3xl sm:text-4xl md:text-6xl mb-4 sm:mb-6">Partner with Us</h2>
-          <p className="text-base sm:text-xl text-white/80 mb-6 sm:mb-8">Join us in shaping the future of community in Africa. Showcase your brand to 300+ professionals.</p>
+          <p className="text-base sm:text-xl text-white/80 mb-6 sm:mb-8">Join us in shaping the future of community in Nigeria. Showcase your brand to 300+ professionals.</p>
           <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
             {[
               'Logo on all event materials (banners, tags, fliers, souvenirs)',
@@ -476,7 +476,7 @@ export default function HomePage() {
       <EventStructure />
       <WhatToExpect />
       <TargetAudience />
-      <SpeakersPreview />
+      {/* <SpeakersPreview /> */}
       <HighlightsPreview />
       <Swags />
       <Sponsorship />

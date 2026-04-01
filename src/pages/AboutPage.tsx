@@ -29,7 +29,7 @@ export default function AboutPage() {
           <p className="text-[10px] sm:text-xs font-bold uppercase tracking-widest opacity-70 mb-2 sm:mb-3">CMX Nigeria Summit</p>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 sm:mb-6">About the Summit</h1>
           <p className="text-base sm:text-xl text-white/80 max-w-2xl leading-relaxed">
-            An initiative designed to redefine the strategic importance of community for businesses, entrepreneurs, and tech talent within the African tech ecosystem.
+            The CMX Nigeria Summit is a high-impact industry gathering, designed to position community as a core driver of business growth, product adoption and ecosystem expansion within Nigeria’s evolving tech landscape.
           </p>
         </div>
       </div>

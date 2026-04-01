@@ -7,10 +7,10 @@ import pic1  from '/DSC00417.JPG';
 
 export default function SpeakersPage() {
   const speakers = [
-    { name: 'Samson Goddy',         role: 'Co-Founder, Open Source Africa',        bio: 'Software engineer and community builder who co-founded Open Source Africa, championing open source culture across the continent.',                                         seed: past2, track: 'Community Strategy' },
-    { name: 'Timothy Oviem',        role: 'Lead, Community Leads in Africa',        bio: "Leads one of Africa's most active community-of-practice networks, helping community professionals upskill and find their place in the ecosystem.",                          seed: past2, track: 'Community Leadership' },
+    { name: 'Samson Goddy',         role: 'Co-Founder, Open Source Nigeria',        bio: 'Software engineer and community builder who co-founded Open Source Nigeria, championing open source culture across the continent.',                                         seed: past2, track: 'Community Strategy' },
+    { name: 'Timothy Oviem',        role: 'Lead, Community Leads in Nigeria',        bio: "Leads one of Nigeria's most active community-of-practice networks, helping community professionals upskill and find their place in the ecosystem.",                          seed: past2, track: 'Community Leadership' },
     { name: 'Haneefah A. Lekki',    role: 'Programs & Community Manager',           bio: 'Has managed programs and communities across multiple tech organisations, bridging the gap between operations and people-first culture.',                                     seed: past2, track: 'People & Programs' },
-    { name: 'Mfonobong Umondia',    role: 'Community Manager, She Code Africa',     bio: 'Drives community engagement and inclusion at She Code Africa, empowering women in tech across the continent.',                                                               seed: pic1,  track: 'Inclusion & Diversity' },
+    { name: 'Mfonobong Umondia',    role: 'Community Manager, She Code Nigeria',     bio: 'Drives community engagement and inclusion at She Code Nigeria, empowering women in tech across the continent.',                                                               seed: pic1,  track: 'Inclusion & Diversity' },
     { name: 'Ayomide Ogunrinola',   role: 'Community Manager, WITECH',              bio: 'Builds and nurtures the WITECH community, creating spaces for women in tech to thrive, collaborate, and lead.',                                                              seed: past2, track: 'Community Building' },
     { name: 'Olawale Omotoso',      role: 'Director of Product Management',         bio: 'Brings a cross-functional perspective on how community integrates into product roadmaps and business strategy.',                                                              seed: past2, track: 'Product & Community' },
     { name: 'Olabanji Ewenla',      role: 'Lead Product Manager, Enoverlab',        bio: 'Shapes the product vision at Enoverlab while championing community-led growth as a core business strategy.',                                                                 seed: past2, track: 'Product Strategy' },
@@ -25,11 +25,11 @@ export default function SpeakersPage() {
         <div className="max-w-7xl mx-auto">
           <p className="text-[10px] sm:text-xs font-bold uppercase tracking-widest opacity-60 mb-2 sm:mb-3">CMX Nigeria Summit</p>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 sm:mb-6">All Speakers</h1>
-          <p className="text-base sm:text-xl text-gray-400 max-w-2xl">10+ industry leaders, community builders, and innovators shaping Africa's tech landscape.</p>
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl">10+ industry leaders, community builders, and innovators shaping Nigeria's tech landscape.</p>
         </div>
       </div>
 
-      <section className="py-14 sm:py-20 bg-white">
+      {/* <section className="py-14 sm:py-20 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
             {speakers.map((speaker, i) => (
@@ -54,6 +54,76 @@ export default function SpeakersPage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section> */}
+
+
+      <section className="py-14 sm:py-20 bg-white">
+        <div className="container-custom">
+
+          {/* Coming Soon Block */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden bg-cmx-dark text-white px-8 sm:px-16 py-20 sm:py-28 flex flex-col items-center text-center"
+          >
+            {/* Decorative blobs */}
+            <div className="absolute -top-16 -left-16 w-64 h-64 bg-cmx-blue/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-cmx-orange/10 rounded-full blur-3xl pointer-events-none" />
+
+            {/* Animated dots grid */}
+            <div className="absolute inset-0 opacity-[0.04]"
+              style={{
+                backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+                backgroundSize: '28px 28px',
+              }}
+            />
+
+            <div className="relative z-10 flex flex-col items-center">
+              {/* Pulsing icon ring */}
+              <div className="relative mb-8">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-cmx-blue/20 flex items-center justify-center animate-pulse">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-cmx-blue/40 flex items-center justify-center">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-cmx-blue" />
+                  </div>
+                </div>
+                {/* Orbiting ring */}
+                <div className="absolute inset-0 rounded-full border-2 border-cmx-blue/30 border-dashed animate-spin" style={{ animationDuration: '8s' }} />
+              </div>
+
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-cmx-blue mb-4">
+                Speaker Lineup
+              </span>
+
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[0.95] mb-5">
+                COMING <br />
+                <span className="text-cmx-blue">SOON</span>
+              </h2>
+
+              <p className="text-gray-400 text-sm sm:text-base max-w-md leading-relaxed mb-10">
+                We're finalising an incredible lineup of community builders, tech leaders, and innovators from across Nigeria. Check back soon.
+              </p>
+
+              {/* Placeholder ghost cards */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-2xl">
+                {Array.from({ length: 4 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + i * 0.1 }}
+                    className="rounded-2xl bg-white/5 border border-white/10 p-4 flex flex-col items-center gap-3"
+                  >
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 animate-pulse" />
+                    <div className="w-3/4 h-2 rounded-full bg-white/10 animate-pulse" />
+                    <div className="w-1/2 h-2 rounded-full bg-white/5 animate-pulse" />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </section>
     </motion.div>

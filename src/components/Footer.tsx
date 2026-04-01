@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 
-import logo2 from '/CMXConnectIbadanLogo2.webp';
+// import logo2 from '/CMXConnectIbadanLogo2.webp';
+import logo2 from '/CMXLOGO.png';
 
 export const Footer = () => (
   <footer className="py-16 bg-cmx-gray">
@@ -35,7 +36,7 @@ export const Footer = () => (
           <ul className="space-y-3 text-gray-500 text-sm">
             <li>Ibadan, Nigeria</li>
             <li>hello@cmxnigeria.com</li>
-            <li>+234 800 000 0000</li>
+            <li>+234 812 305 1357</li>
           </ul>
         </div>
       </div>

@@ -4,7 +4,8 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { cn } from '../utils';
 
-import logo2 from '/CMXConnectIbadanLogo2.webp';
+// import logo2 from '/CMXConnectIbadanLogo2.webp';
+import logo2 from '/CMXLOGO.png';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
