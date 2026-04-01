@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Left content */}
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cmx-blue/10 text-cmx-blue rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-5 sm:mb-6">
-              <Zap size={12} /> The Premier Community Event in Africa
+              The Premier Community Event in Africa
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] mb-5 sm:mb-6">
               BEYOND THE <br /><span className="text-cmx-blue">HORIZON</span>
@@ -55,7 +55,7 @@ const Hero = () => {
                 <Calendar className="text-cmx-blue flex-shrink-0" size={18} />
                 <div>
                   <p className="text-[10px] uppercase font-bold text-gray-400 leading-none mb-0.5">Date</p>
-                  <p className="text-xs sm:text-sm font-bold">October 26, 2024</p>
+                  <p className="text-xs sm:text-sm font-bold">October 26, 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 bg-cmx-gray px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl">
