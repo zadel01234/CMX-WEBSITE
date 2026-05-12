@@ -41,7 +41,7 @@ export const Footer = () => (
         </div>
       </div>
       <div className="pt-6 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-400">
-        <p>© 2024 CMX Nigeria. All rights reserved.</p>
+        <p>© 2026 CMX Nigeria. All rights reserved.</p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-cmx-blue">Privacy Policy</a>
           <a href="#" className="hover:text-cmx-blue">Terms of Service</a>
