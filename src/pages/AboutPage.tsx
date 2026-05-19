@@ -5,8 +5,8 @@ import {
   Briefcase, Zap, CheckCircle2,
 } from 'lucide-react';
 
-import past1 from '/DSC00133.JPG';
-import past2 from '/R5__2057.JPG';
+import past1 from '/DSC00133.jpg';
+import past2 from '/R5__2057.jpg';
 
 export default function AboutPage() {
   const objectives = [

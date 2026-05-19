@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Users, Handshake, Star, Briefcase } from 'lucide-react';
 
-import hero  from '/DSC00118.JPG';
-import past1 from '/DSC00133.JPG';
-import past2 from '/R5__2057.JPG';
+import hero from '/DSC00118.jpg';
+import past1 from '/DSC00133.jpg';
+import past2 from '/R5__2057.jpg';
 import past3 from '/JKV_0236.jpg';
 import past4 from '/JKV_0237.jpg';
 

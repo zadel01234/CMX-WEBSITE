@@ -498,15 +498,15 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { cn } from '../utils';
 
-import hero   from '/DSC00118.JPG';
-import past2  from '/R5__2057.JPG';
-import past3  from '/JKV_0236.jpg';
-import past4  from '/JKV_0237.jpg';
-import pic1   from '/cmx1.jpg';
-import pic2   from '/DSC00472.JPG';
-import pic3   from '/cmx2.jpg';
-import pic4   from '/JKV_0374.jpg';
-import shirt  from '/CMXSHIRT2.webp';
+import hero from '/DSC00118.jpg';
+import past2 from '/R5__2057.jpg';
+import past3 from '/JKV_0236.jpg';
+import past4 from '/JKV_0237.jpg';
+import pic1 from '/cmx1.jpg';
+import pic2 from '/DSC00472.jpg';
+import pic3 from '/cmx2.jpg';
+import pic4 from '/JKV_0374.jpg';
+import shirt from '/CMXSHIRT2.webp';
 import cmxSummitImg from '/cmx3.jpg';
 
 const CAROUSEL_IMAGES = [hero, pic2, past3, past4];
@@ -558,9 +558,9 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <button className="btn-primary flex items-center justify-center gap-2">
-                Get Your Ticket <ArrowRight size={16} />
-              </button>
+              <a href="https://events.cmxhub.com/events/details/cmx-ibadan-presents-cmx-nigeria-summit/" className="btn-primary flex items-center justify-center gap-2">
+                Register <ArrowRight size={16} />
+              </a>
               <button className="btn-outline" onClick={() => document.getElementById('structure')?.scrollIntoView({ behavior: 'smooth' })}>
                 View Schedule
               </button>

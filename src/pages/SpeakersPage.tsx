@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Twitter, Linkedin } from 'lucide-react';
 
-import past2 from '/R5__2057.JPG';
-import pic1  from '/DSC00417.JPG';
+import past2 from '/R5__2057.jpg';
+import pic1 from '/DSC00417.jpg';
 
 export default function SpeakersPage() {
   const speakers = [
